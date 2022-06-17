@@ -1,0 +1,91 @@
+.btn {
+  &.textLeft {
+    background: #3c4b64;
+    color: #fff;
+  }
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  .buttonpane {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    padding: 2px;
+    &:hover {
+      border: 2px solid blue;
+      color: blue;
+    }
+  }
+}
+
+.picturecontainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  .picture_pane {
+    margin-right: 10px;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    .remove-icon {
+      position: absolute;
+      right: 5px;
+      color: red;
+      &:hover {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.animateButton {
+  .text {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
+}
